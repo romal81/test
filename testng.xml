@@ -1,9 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none">
-  <test name="Test">
+<suite name="Suite" parallel="tests" thread-count="5">
+    
+  <!-- <test name="Test on Linux VM firefox Browser ">
+	<parameter name="browser" value="firefox" />
+	<parameter name="ip" value="10.222.115.75" />
+	<parameter name="port" value="6661" />      
     <classes>
       <class name="test"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+  
+  <test name="Test on Windows VM () - internet explorer ">
+	<parameter name="browser" value="internet explorer" />
+	<parameter name="ip" value="10.51.231.3" />
+	<parameter name="port" value="4441" />      
+    <classes>
+      <class name="test"/>
+    </classes>
+  </test>
+  
+  <test name="Test on Windows VM2 - chrome Browser ">
+	<parameter name="browser" value="chrome" />
+	<parameter name="ip" value="10.51.230.251" />
+	<parameter name="port" value="5551" />      
+    <classes>
+      <class name="test"/>
+    </classes>
+  </test> -->
+  
+  <test name="Test on local Windows - firefox browser">
+	<parameter name="browser" value="firefox" />
+	<parameter name="ip" value="10.222.115.150" />
+	<parameter name="port" value="4442" />      
+    <classes>
+      <class name="test"/>
+      <class name="test2"/>
+    </classes>
+  </test>
+  
+  <test name="Test on local Windows - chrome ">
+	<parameter name="browser" value="chrome" />
+	<parameter name="ip" value="10.222.115.150" />
+	<parameter name="port" value="4455" />      
+    <classes>
+      <class name="test"/>
+      <class name="test2"/>
+    </classes>
+  </test>
+  
+ <test name="Test on Windows VM1 - internet explorer">
+	<parameter name="browser" value="internet explorer" />
+	<parameter name="ip" value="10.51.231.3" />
+	<parameter name="port" value="6663" />      
+    <classes>
+      <class name="test"/>
+    </classes>
+  </test>
+
+ <!--   <test name="Test on remote firefox browser">
+	<parameter name="browser" value="firefox" />
+	<parameter name="ip" value="10.51.231.3" />
+	<parameter name="port" value="6661" />
+    <classes>
+      <class name="test"/>
+    </classes>
+  </test>
+  
+  <test name="Test on remote chrome browser">
+	<parameter name="browser" value="chrome" />
+	<parameter name="ip" value="10.51.231.3" />
+	<parameter name="port" value="6662" />
+    <classes>
+      <class name="test"/>
+    </classes>
+  </test>
+  
+  <test name="Test on remote IE browser">
+	<parameter name="browser" value="internet explorer" />
+	<parameter name="ip" value="10.51.231.3" />
+	<parameter name="port" value="6663" />
+    <classes>
+      <class name="test"/>
+    </classes>
+  </test>
+ -->  
+</suite>
