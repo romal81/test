@@ -29,6 +29,21 @@
 		<artifactId>netty</artifactId>
 		<version>3.5.2.Final</version>
 	</dependency>
+	<dependency>
+		<groupId>org.uncommons</groupId>
+		<artifactId>reportng</artifactId>
+		<version>1.1.4</version>
+	</dependency>
+	<dependency>
+		<groupId>com.google.inject</groupId>
+		<artifactId>guice</artifactId>
+		<version>3.0</version>
+	</dependency>
+	<dependency>
+		<groupId>velocity</groupId>
+		<artifactId>velocity-dep</artifactId>
+		<version>1.4</version>
+	</dependency>		
   </dependencies>
   <build>
      <defaultGoal>clean install</defaultGoal>
